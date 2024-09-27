@@ -13,3 +13,21 @@ print("######################")
 
 
 
+name = input("What is your name? ")
+print(f"{name}.")
+
+age = input("how old are you (in years?) ")
+print(f"{age}.")
+
+height = float(input("how tall are you (in meters)? "))
+print(f"{height}.")
+# have to add float or it wont work
+weight = float(input("how much do you weigh (in kilograms)?"))
+print(f"{weight}.")
+
+# this is where it shold calculate BMI
+bmi = weight / (height ** 2)
+
+# this is where it should show the BMI and the age
+print(f"{name}, your BMI is {bmi:.2f} and you are {age} years old.")
+
