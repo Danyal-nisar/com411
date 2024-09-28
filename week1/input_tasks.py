@@ -1,4 +1,6 @@
 # Ask user to enter their name
+import html
+
 name = input("What is your name? ")
 print(f"Nice to meet you, {name}.")
 eye = input("Please enter a character for the robots eye.")
@@ -31,3 +33,28 @@ bmi = weight / (height ** 2)
 # this is where it should show the BMI and the age
 print(f"{name}, your BMI is {bmi:.2f} and you are {age} years old.")
 
+print("lives:")
+html_content = """
+<html>
+<style>
+body {
+  font-size: 20px;
+}
+</style>
+<body>
+
+<span style='font-size:100px;'>&#10084;</span>
+<p>&#10084;</p>
+<p>&#x2764;</p>
+
+</body>
+</html>
+"""
+
+with open('output.html', 'w') as file:
+    file.write(html_content)
+
+
+print("energy:")
+
+print("Shield:")
