@@ -34,7 +34,7 @@ bmi = weight / (height ** 2)
 print(f"{name}, your BMI is {bmi:.2f} and you are {age} years old.")
 
 print("lives:")
-html_content = """
+html_content = """"
 <html>
 <style>
 body {
@@ -57,4 +57,7 @@ with open('output.html', 'w') as file:
 
 print("energy:")
 
-print("Shield:")
+
+print("Shield")
+
+
