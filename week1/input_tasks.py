@@ -53,10 +53,8 @@ body {
 
 with open('output.html', 'w') as file:
     file.write(html_content)
-
-
+    
 print("energy:")
-
 
 print("Shield")
 
