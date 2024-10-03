@@ -8,7 +8,8 @@ print("Finished reading book!")
 print("")
 #use input function to allow activity to be saved
 activity = input("Please enter the activity to be performed: ")
-#if function is used to tell system that if activity is calculate then print performing calculate or else something else
+#if function is used to tell system that if activity is
+#calculated then print performing calculate or else something else
 if activity == "calculate":
     print("Performing calculations...")
 else:
@@ -49,5 +50,33 @@ elif number2>number1:
 if number1 == number2:
     print("both are equal")
 
+print("")
+print("")
+
+
+
+number4 = int(input("Please enter the first whole number:"))
+number5 = int(input("Please enter the second whole number:"))
+number6 = int(input("Please enter the third whole number:"))
+
+evencount = 0
+oddcount = 0
+
+if number4 % 2 == 0:
+    evencount += 1
+else:
+    oddcount += 1
+
+if number5 % 2 == 0:
+    evencount += 1
+else:
+    oddcount += 1
+
+if number6 % 2 == 0:
+    evencount += 1
+else:
+    oddcount += 1
+
+print(f"There were {evencount} even and {oddcount} odd numbers.")
 
 
