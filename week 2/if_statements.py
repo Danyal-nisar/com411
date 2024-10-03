@@ -30,4 +30,10 @@ if direction == "left":
 if direction == "right":
     print("i am moving in an right direction ")
 
+number=(int(input ("Please enter a whole number: ")))
+if number % 2 == 0:
+       print(f"your number {number} is  even number")
+
+else:
+        print(f"your number {number} is odd number")
 
