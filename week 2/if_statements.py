@@ -37,3 +37,17 @@ if number % 2 == 0:
 else:
         print(f"your number {number} is odd number")
 
+number1 = int(input("please enter a first number: "))
+number2 = int(input("please enter a second number: "))
+
+if number1>number2:
+    print("your second number is the smallest number")
+
+elif number2>number1:
+    print("your first number is the smallest number")
+
+if number1 == number2:
+    print("both are equal")
+
+
+
