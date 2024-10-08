@@ -15,7 +15,7 @@ print("")
 where = input("Where should I look? ")
 #the begining location where check is taking place
 if where == "in the bedroom":
-    # their must be a prompt to search a specific area within the bedroom
+    # their must be a prompt to search a specific area within the bedroom..
     where = input("Where in the bedroom should I look? ")
     if where == "under the bed":
 

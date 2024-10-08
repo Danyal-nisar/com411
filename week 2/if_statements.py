@@ -9,7 +9,7 @@ print("")
 #use input function to allow activity to be saved
 activity = input("Please enter the activity to be performed: ")
 #if function is used to tell system that if activity is
-#calculated then print performing calculate or else something else
+#calculated then print performing calculate or else something else.
 if activity == "calculate":
     print("Performing calculations...")
 else:
