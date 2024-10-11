@@ -8,8 +8,13 @@ while apples_to_remove < num_apples_to_remove:
 
 
 
+
+
+objects_to_avoid = int(input("How many obstacles must I avoid? "))
 num_of_obstacles = 0
 
 while num_of_obstacles < objects_to_avoid:
     num_of_obstacles += 1
+    print(f"Avoiding... Done! {num_of_obstacles} obstacle{'s' if num_of_obstacles > 1 else ''} avoided.")
 
+print("All obstacles have been avoided.")
