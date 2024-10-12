@@ -22,9 +22,15 @@ print(" second message is on the same line ")
 
 
 needed_charge_bars = int(input("how many bars should be charged ?"))
-charged_bars = 0
-while charged_bars < needed_charge_bars:
-    charged_bars += 1
+#input is needed to make ti a queestion to the user and to integrate the response
+charged_bars = 0 #this is to set the intial count of charged bars to 0
+while charged_bars < needed_charge_bars: #while loop to make action repeat until fulfilled
+    charged_bars += 1 #makes sure the charge bars by one
     print("Charging:", '█' * charged_bars)
     print("the battery is fully charged ")
 
+
+repeated_word = input("please enter a phrase")
+num_characters = len(repeated_word) #calculating number of highs in a phrase
+for _ in range(num_characters): #print hi number of times to be equal to the number of characters
+    print("Hi,", end=' ')
