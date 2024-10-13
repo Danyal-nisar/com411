@@ -12,11 +12,9 @@ while apples_to_remove < num_apples_to_remove:
 
 objects_to_avoid = int(input("How many obstacles must I avoid? "))
 num_of_obstacles = 0
-
-while num_of_obstacles < objects_to_avoid:
-    num_of_obstacles += 1
+while num_of_obstacles < objects_to_avoid: # Use a while loop to simulate avoiding obstacles. It runs until all obstacles are avoided.
+    num_of_obstacles += 1    # Increment the number of obstacles avoided.
     print(f"Avoiding... Done! {num_of_obstacles} obstacle{'s' if num_of_obstacles > 1 else ''} avoided.")
-
 print("All obstacles have been avoided.", end="")
 print(" second message is on the same line ")
 
@@ -34,3 +32,19 @@ repeated_word = input("please enter a phrase")
 num_characters = len(repeated_word) #calculating number of highs in a phrase
 for _ in range(num_characters): #print hi number of times to be equal to the number of characters
     print("Hi,", end=' ')
+
+print("")
+
+# Display the initial message indicating the start of the calculation.
+print("Calculating the sum of the first 100 numbers...")
+# Initialize variables for the sum and the counter.
+sum_of_numbers = 0
+current_number = 1
+# Use a while loop to calculate the sum of numbers from 1 to 100 (inclusive).
+while current_number <= 100:
+    sum_of_numbers += current_number
+    current_number += 1
+# Once the sum is calculated, display the final message along with the answer.
+print(f"...Done! The answer is {sum_of_numbers}")
+
+
