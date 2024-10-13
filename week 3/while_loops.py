@@ -47,4 +47,19 @@ while current_number <= 100:
 # Once the sum is calculated, display the final message along with the answer.
 print(f"...Done! The answer is {sum_of_numbers}")
 
+print("")
+
+
+numbers_to_sum = int(input("How many numbers do you want to sum? "))
+sum_of_numberss = 0
+num_count = 1
+while num_count <= numbers_to_sum:
+    number = int(input(f"Please enter number {num_count} of {numbers_to_sum}: "))  # Prompt for the actual number
+    sum_of_numberss += number  # Add the entered number to the sum
+    num_count += 1  # Increment the counter
+
+print(f"The answer is {sum_of_numberss}.")  # Print the total sum
+
+print("")
+
 
