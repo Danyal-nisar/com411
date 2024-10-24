@@ -73,6 +73,41 @@ if __name__ == "__main__":
 print("")
 
 
+def steps():
+    # List of movement options
+    return ["Move Forward", "Move Backward", "Turn Left", "Turn Right"]
+
+
+def menu():
+    # Display options and get user input
+    print("Please enter a direction:")
+    for i, step in enumerate(steps()):
+        print(f"{i}: {step}")
+
+    choice = int(input())  # Get the user's choice
+    return choice
+
+
+def escape_route():
+    route = []  # Initialize the escape route
+    while True:
+        choice = menu()  # Show menu and get choice
+        if 0 <= choice < len(steps()):  # Check if choice is valid
+            route.append(steps()[choice])  # Add choice to route
+            print(f"Current escape route: {route}")
+        else:
+            print("Invalid choice. Please try again.")
+
+        if len(route) >= 5:  # Stop after 5 selections
+            break
+
+    return route
+
+
+if __name__ == "__main__":
+    final_route = escape_route()  # Get the final route
+    print(f"Final escape route: {final_route}")
+
 
 
 
