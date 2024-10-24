@@ -40,3 +40,72 @@ if __name__ == "__main__":
     run_task()
 
 
+print("")
+
+def steps():
+    steps = []
+    steps.append("Move Forward")
+    steps.append("Move Backward")
+    steps.append("Turn Left")
+    steps.append("Turn Right")
+    return steps
+
+def directions():
+    steps = []
+    steps.append("Move Forward")
+    steps.append("Move Backward")
+    steps.append("Turn Left")
+    steps.append("Turn Right")
+    return steps
+
+def menu():
+    print("Please select a direction:")
+    for i, step in enumerate(directions(), start=1):
+        print(f"{i}. {step}")
+
+    choice = int(input("Enter the number of your choice: "))
+    return choice
+
+if __name__ == "__main__":
+    user_choice = menu()
+    print(f"You selected: {directions()[user_choice - 1]}")
+
+print("")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
