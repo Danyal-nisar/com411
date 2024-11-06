@@ -103,12 +103,70 @@ def escape_route():
 
     return route
 
+print("")
+
+def directions():
+    steps = ["Move Forward", "Move Backward", "Turn Left", "Turn Right"]
+    return steps
+
+def menu_and_input():
+    print("Please select a direction:")
+    directions_list = directions()
+    for index, direction in enumerate(directions_list):
+        print(f"{index}: {direction}")
+    user_choice = int(input("Enter the number corresponding to your choice: "))
+    return directions_list[user_choice]
+
+def run_task4():
+    route = []
+    print("Working out escape route...")
+    for _ in range(5):
+        selected_direction = menu_and_input()
+        route.append(selected_direction)
+    print(f"Escape route: {route}")
+
+run_task4()
+
+print("")
+
+def likelihood():
+    likelihoods = (50, 38, 27, 99, 4)
+    return min(likelihoods)
+
+def run_task1():
+    min_likelihood = likelihood()
+    print(f"Minimum likelihood of falling: {min_likelihood}%")
 
 if __name__ == "__main__":
-    final_route = escape_route()  # Get the final route
-    print(f"Final escape route: {final_route}")
+    run_task1()
 
+print("")
 
+def steps():
+    likelihoods = [
+        ("step 1", 50),
+        ("step 2", 38),
+        ("step 3", 27),
+        ("step 4", 99),
+        ("step 5", 4)
+    ]
+    return likelihoods
+
+def run_task3():
+    step_list = steps()
+    good_steps = []
+    bad_steps = []
+
+    for step in step_list:
+        if step[1] >= 50:
+            bad_steps.append(step)
+        else:
+            good_steps.append(step)
+
+    print(f"Good steps: {len(good_steps)}, Bad steps: {len(bad_steps)}")
+
+if __name__ == "__main__":
+    run_task3()
 
 
 
