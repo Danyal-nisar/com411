@@ -42,4 +42,20 @@ def run_task2():
 if __name__ == "__main__":
     run_task2()
 
+print("")
+
+def search(file_name):
+    print("Searching...")
+    with open(file_name, 'r') as file:
+        for line in file:
+            print(f"Looked in {line.strip()}.")
+    print("...Done!")
+
+def run_task3():
+    search("library.txt")
+
+if __name__ == "__main__":
+    run_task3()
+
+print("")
 
